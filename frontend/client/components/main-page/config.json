@@ -1,0 +1,9 @@
+{
+  "script":"main-page/MainPage",
+  "id":"MainPage",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.12.x",
+    "ms-details-component": "0.0.0"
+  }
+}

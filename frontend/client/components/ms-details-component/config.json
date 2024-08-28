@@ -1,0 +1,10 @@
+{
+  "script":"ms-details-component/MsDetailsComponent",
+  "id":"MsDetailsComponent",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.12.x",
+    "main-page": "0.0.0",
+    "dependency-graph-component": "0.0.0"
+  }
+}

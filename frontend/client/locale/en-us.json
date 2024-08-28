@@ -1,0 +1,8 @@
+{
+  "CONTAINER_TITLE": "E-UI SDK",
+  "CONTAINER_TITLE_SHORT": "E-UI SDK",
+  "MENU_TITLE": "Menu",
+  "MENU": {
+    "APP_1": "Microservice Management Tool"
+  }
+}

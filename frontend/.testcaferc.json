@@ -1,0 +1,23 @@
+{   
+    "appCommand": "webpack-dev-server --config webpack.config.dev.js --port 10000",
+    "src": ["client/**/*-testcafe.js"],
+    "screenshots": {
+        "path": "test/acceptance/screenshots/",
+        "takeOnFails": true,
+        "pathPattern": "${FIXTURE}/${TEST}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "selectorTimeout": 3000,
+    "assertionTimeout": 1000,
+    "pageLoadTimeout": 2000,
+    "speed": 1,
+    "reporter": [
+        {
+            "name": "xunit",
+            "output": "test/reports/acceptance-report.xunit"
+        },
+        {
+            "name": "spec"
+        }
+    ],
+    "color": true
+}

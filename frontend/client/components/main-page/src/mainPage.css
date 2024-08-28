@@ -1,0 +1,24 @@
+/* style goes here */
+:host{
+  display: block;
+}
+eui-base-v0-text-field,eui-base-v0-textarea{
+  margin-bottom: 20px;
+}
+/* 
+eui-base-v0-spinner{
+  float: right;
+  padding-right: 140px;
+  
+} */
+#divDep{
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  width: fit-content;
+}
+/* eui-base-v0-combo-box{
+
+} */
+#add-button{
+  padding:5pt;
+}

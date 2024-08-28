@@ -1,0 +1,9 @@
+:host{
+  display: block;
+}
+eui-base-v0-text-field,eui-base-v0-textarea{
+  margin-bottom: 20px;
+}
+/* #add-button{
+  margin-top: 30px;
+} */

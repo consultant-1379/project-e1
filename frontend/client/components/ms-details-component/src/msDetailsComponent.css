@@ -1,0 +1,16 @@
+/* style goes here */
+:host{
+  display: block;
+}
+eui-base-v0-text-field,eui-base-v0-textarea{
+  margin-bottom: 20px;
+}
+
+.layout__dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three column layout*/
+  row-gap: var(--space-small);
+  column-gap: var(--space-small);
+  background-color: var(--layer1);
+  padding-bottom: var(--space-small);
+}

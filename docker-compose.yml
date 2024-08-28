@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:4.4.0
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db:rw
+    ports:
+      - 27017:27017
+    networks:
+      - msmt-net
+
+  msmt:
+    image: msmt
+    restart: unless-stopped
+    build:
+      ./msmt-spring-application/microservicemanagementtool
+    networks:
+      - msmt-net
+    ports:
+      - 8080:8080
+    environment:
+      MONGO_SERVER: mongo
+
+  frontend:
+    image: frontend
+    restart: unless-stopped
+    build: .
+    networks:
+      - msmt-net
+    ports:
+      - 80:8080
+
+networks:
+  msmt-net:
+volumes:
+  mongo-data:
